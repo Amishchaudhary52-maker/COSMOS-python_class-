@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .result {
+        background-color: white;
+        width: 400px;
+        max-width: 90%;
+        margin: auto;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .score {
+        font-size: 30px;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    a:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+</head>
+<body>
+<h1>Quiz Result</h1>
+
+<p>Your Score:</p>
+
+<div class="score">
+    {{ score }} / {{ total }}
+</div>
+
+<a href="/">Try Again</a>
+
+</body>
+</html>
